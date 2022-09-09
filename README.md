@@ -38,7 +38,7 @@ Yay - your docker is running and ready to run your analysis.
 5. Open a web browser.
 6. Type in `localhost:8888/` in the address bar and click enter.
 7. Enter `daki` in the token field.
-8. From here you can start a new jupyter notebook and perform your analysis. Alternatively, you can open the `demo.ipynb` to learn a bit how to use mongo from python (using `pymongo`), learn how to use the data in the ECG database, and how to run a simple tensorflow based classifier.
+8. From here you can start a new jupyter notebook and perform your analysis. Alternatively, you can open the `demo_ecg.ipynb` to learn a bit how to use mongo from python (using `pymongo`), learn how to use the data in the ECG database, and how to run a simple tensorflow based classifier.
     - Importantly, all created notebooks to be used with this docker should be in the project home directory.   
     
     
