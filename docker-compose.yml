@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    volumes:
+      - ./init-mongodb:/docker-entrypoint-initdb.d
+      - ./init-mongodb/data:/tmp/data
+    hostname: mongohost
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile_jupTfMongo
+    container_name: jupyterlab
+    environment:
+      - JUPYTER_TOKEN=daki
+    volumes:
+      - ./:/home/jovyan/
+    ports:
+      - 8888:8888
