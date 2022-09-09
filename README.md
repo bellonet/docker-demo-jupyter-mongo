@@ -26,7 +26,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-c
 
     
 1. Open a terminal window.
-2. clone this repo - `git@github.com:bellonet/docker-demo-jupyter-mongo.git`
+2. clone this repo - `git clone https://github.com/bellonet/docker-demo-jupyter-mongo.git`
 3. `cd docker-demo-jupyter-mongo` to have it as the working directory.
 4. Inside the directory - Run `docker-compose up -d`
     - As this is the first time that you run the container, it would download and build all the components, thus this step would take some minutes.
