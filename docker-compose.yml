@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   mongodb:
-    container_name: mongodb
+    container_name: Docker_DB
     image: mongo:latest
     volumes:
       - ./init-mongodb:/docker-entrypoint-initdb.d
@@ -12,7 +12,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_jupTfMongo
-    container_name: jupyterlab
+    container_name: Docker_JL
     environment:
       - JUPYTER_TOKEN=daki
     volumes:
